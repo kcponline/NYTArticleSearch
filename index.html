@@ -4,29 +4,66 @@
 	<title>NY Times Search</title>
 	<meta charset="utf-8">
  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<div class="container">
 		<div class="jumbotron">
-			<h1>NY Times Search</h1>
+			<h1>New York Times Search</h1>
 		</div>
 	</div>
 
 	<div class="container">
+	<div id="border">
 
 		<h4>Search Parameters</h4>
 
 		<form row= "form">
+		<div id="input">
 
 			<div class="form-group">
 				<label for = "Search">Search Term:</label>
 				<input type="text" class="form-control" id="search" placeholder="">
 			</div>
 
-			
+			<div class="dropdown">
+				<label for="records">Number of Records to Retrieve</label>
+   				<select class="form-control" id="number">
+					<option value="1">1</option>
+					<option value="5" selected>5</option>
+					<option value="10">10</option>
+				 </select>
+			</div>
+
+			<div class="form-group">
+				<label for = "Search">Start Year (Optional):</label>
+				<input type="text" class="form-control" id="start" placeholder="">
+			</div>
+
+			<div class="form-group">
+				<label for = "Search">End Year (Optional):</label>
+				<input type="text" class="form-control" id="end" placeholder="">
+			</div>
+
+			<button type="submit" class="btn btn-default" id="submit">Search</button>
+			<button type="button" class="btn btn-default" id="clear">Clear Results</button>
+		</div>
 		</form>
-
-
 	</div>
+	</div>
+	<br>
+
+	<div class="container">
+	<div id="border">
+		<h4>Top Articles</h4>
+
+		<form row="form">
+			<div id="input">
+			</div>
+		</form>
+	</div>
+	</div>
+
+
 </body>
 </html>
