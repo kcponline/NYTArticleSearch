@@ -19,6 +19,7 @@
 	// pseudo 05: do simple 3 parameter scenario based on query term
 	// on the article body, headline and byline with start & end date yyyymmdd
 	// and just either html or append to input container
+	// code referenced from 0801 inclasswork movieJSONDump
 
 
 	$('#submit').on('click', function(){
@@ -46,6 +47,7 @@
             	console.log(queryURL)
             	console.log(response)
             	});
+            // return false is absolutely necessary
             return false;
     });
                 // var results = response.data;
